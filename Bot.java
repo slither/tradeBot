@@ -23,6 +23,8 @@ public class Bot
               exponential explosion in pending messages. Please, don't do that!
             */
             to_exchange.println(("HELLO " + config.team_name).toUpperCase());
+            to_exchange.println(("ADD 7 BOND BUY 997 50" + config.team_name).toUpperCase());
+            to_exchange.println(("ADD 7 BOND sell 1003 50" + config.team_name).toUpperCase());
             String reply = from_exchange.readLine().trim();
             System.err.printf("The exchange replied: %s\n", reply);
         }
@@ -31,4 +33,5 @@ public class Bot
             e.printStackTrace(System.out);
         }
     }
+
 }
