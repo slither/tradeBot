@@ -23,7 +23,7 @@ class Configuration {
     Configuration(Boolean test_mode) {
         if(!test_mode) {
             exchange_port = 20000;
-            exchange_name = "localhost";
+            exchange_name = "production";
         } else {
             exchange_port = 20000 + test_exchange_kind;
             exchange_name = "test-exch-" + this.team_name;
